@@ -3,7 +3,7 @@ import os
 from langchain_helper import get_qa_chain, create_vector_DB 
 
 
-st.title('Tech Learning QA 🌳')
+st.title('CSV ANSWERING BOT 🌳')
 
 if not os.path.isdir('faiss_index'):
     btn = st.button("Create Knowledgebase")
