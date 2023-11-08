@@ -4,12 +4,10 @@ from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
-
-import os
-
 import google.generativeai as palm
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 
