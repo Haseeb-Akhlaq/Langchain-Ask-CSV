@@ -5,14 +5,15 @@ from langchain.vectorstores import FAISS
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
+import os
+
 import google.generativeai as palm
 
 from dotenv import load_dotenv
-import os
 load_dotenv()
 
 
-embeddings = OpenAIEmbeddings(openai_api_key=os.environ["OPENAI_API_KEY"])
+embeddings = OpenAIEmbeddings()
 llm = GooglePalm()
 
 
